@@ -27,7 +27,7 @@
         tools:layout="@layout/fragment_post_detail" >
         <argument
             android:name="post"
-            app:argType="com.davidargote.clone_reddit.data.local.PostEntity" />
+            app:argType="com.davidargote.clone_reddit.domain.local.PostEntity" />
     </fragment>
 
 </navigation>

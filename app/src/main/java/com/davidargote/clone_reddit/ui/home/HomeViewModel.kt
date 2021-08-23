@@ -3,9 +3,8 @@ package com.davidargote.clone_reddit.ui.home
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.davidargote.clone_reddit.core.Resource
-import com.davidargote.clone_reddit.data.local.PostEntity
-import com.davidargote.clone_reddit.data.remote.Child
-import com.davidargote.clone_reddit.domain.post_repository.PostsRepository
+import com.davidargote.clone_reddit.domain.local.PostEntity
+import com.davidargote.clone_reddit.repository.post_repository.PostsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

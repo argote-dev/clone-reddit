@@ -1,20 +1,16 @@
 package com.davidargote.clone_reddit.ui.home
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.whenCreated
 import androidx.lifecycle.whenResumed
 import androidx.navigation.fragment.findNavController
 import com.davidargote.clone_reddit.core.Resource
-import com.davidargote.clone_reddit.data.local.PostEntity
-import com.davidargote.clone_reddit.data.remote.Child
+import com.davidargote.clone_reddit.domain.local.PostEntity
 import com.davidargote.clone_reddit.databinding.FragmentHomeBinding
 import com.davidargote.clone_reddit.ui.home.adapter.PostAdapter
 import com.google.android.material.snackbar.Snackbar

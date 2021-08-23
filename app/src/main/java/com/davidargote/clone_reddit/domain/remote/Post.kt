@@ -1,6 +1,6 @@
-package com.davidargote.clone_reddit.data.remote
+package com.davidargote.clone_reddit.domain.remote
 
-import com.davidargote.clone_reddit.data.local.PostEntity
+import com.davidargote.clone_reddit.domain.local.PostEntity
 import com.google.gson.annotations.SerializedName
 
 data class Post(

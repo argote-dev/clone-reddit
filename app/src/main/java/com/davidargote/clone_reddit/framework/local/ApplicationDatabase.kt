@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.davidargote.clone_reddit.core.Constants
-import com.davidargote.clone_reddit.data.local.PostEntity
+import com.davidargote.clone_reddit.domain.local.PostEntity
 import com.davidargote.clone_reddit.framework.local.dao.PostDao
 
 @Database(entities = [PostEntity::class], version = 1)

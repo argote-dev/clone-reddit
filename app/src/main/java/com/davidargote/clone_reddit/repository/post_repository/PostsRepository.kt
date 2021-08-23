@@ -1,9 +1,9 @@
-package com.davidargote.clone_reddit.domain.post_repository
+package com.davidargote.clone_reddit.repository.post_repository
 
 import com.davidargote.clone_reddit.core.InternetChek
-import com.davidargote.clone_reddit.data.local.PostEntity
-import com.davidargote.clone_reddit.data.remote.toPostEntity
-import com.davidargote.clone_reddit.data.remote.toPostEntityVideo
+import com.davidargote.clone_reddit.domain.local.PostEntity
+import com.davidargote.clone_reddit.domain.remote.toPostEntity
+import com.davidargote.clone_reddit.domain.remote.toPostEntityVideo
 import com.davidargote.clone_reddit.framework.local.dao.PostDao
 import com.davidargote.clone_reddit.framework.remote.Service
 import kotlinx.coroutines.Dispatchers

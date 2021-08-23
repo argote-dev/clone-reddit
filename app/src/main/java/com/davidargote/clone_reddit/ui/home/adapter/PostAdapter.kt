@@ -12,7 +12,7 @@ import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.davidargote.clone_reddit.core.BaseViewHolder
 import com.davidargote.clone_reddit.core.TimeUtils
-import com.davidargote.clone_reddit.data.local.PostEntity
+import com.davidargote.clone_reddit.domain.local.PostEntity
 import com.davidargote.clone_reddit.databinding.ItemPostBinding
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.SimpleExoPlayer

@@ -1,7 +1,7 @@
 package com.davidargote.clone_reddit.framework.local.dao
 
 import androidx.room.*
-import com.davidargote.clone_reddit.data.local.PostEntity
+import com.davidargote.clone_reddit.domain.local.PostEntity
 
 @Dao
 interface PostDao {

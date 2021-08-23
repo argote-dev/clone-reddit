@@ -1,4 +1,4 @@
-package com.davidargote.clone_reddit.data.remote
+package com.davidargote.clone_reddit.domain.remote
 
 import com.google.gson.annotations.SerializedName
 

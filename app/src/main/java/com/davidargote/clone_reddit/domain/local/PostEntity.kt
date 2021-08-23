@@ -1,4 +1,4 @@
-package com.davidargote.clone_reddit.data.local
+package com.davidargote.clone_reddit.domain.local
 
 import android.os.Parcelable
 import androidx.room.Entity

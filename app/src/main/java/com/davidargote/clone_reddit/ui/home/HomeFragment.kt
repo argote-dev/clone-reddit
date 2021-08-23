@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.whenCreated
@@ -16,6 +17,7 @@ import com.davidargote.clone_reddit.data.local.PostEntity
 import com.davidargote.clone_reddit.data.remote.Child
 import com.davidargote.clone_reddit.databinding.FragmentHomeBinding
 import com.davidargote.clone_reddit.ui.home.adapter.PostAdapter
+import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -53,7 +55,7 @@ class HomeFragment : Fragment(), PostAdapter.OnPostClickListener {
                             binding.progressBarListPosts.visibility = View.GONE
                         }
                         is Resource.Failure -> {
-                            Log.e(TAG, resource.exception.message.toString())
+                            Snackbar.make(view, resource.exception.message.toString(), Snackbar.LENGTH_SHORT).show()
                         }
                     }
 

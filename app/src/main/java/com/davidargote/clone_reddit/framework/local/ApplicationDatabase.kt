@@ -24,10 +24,6 @@ abstract class ApplicationDatabase: RoomDatabase() {
             ).fallbackToDestructiveMigration().build()
             return INSTANCE!!
         }
-
-        fun destroyInstance() {
-            INSTANCE = null
-        }
     }
 
 }

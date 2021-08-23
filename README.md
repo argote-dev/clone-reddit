@@ -1,7 +1,4 @@
 # Clone reddit - App
-
-### Arquitectura
-
 ---
 #### Arquitectura (MVVM - Clean Arquitecture)
 ```

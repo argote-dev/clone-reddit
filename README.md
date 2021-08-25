@@ -25,7 +25,7 @@
         -Post
         -RedditVideo
         -TopResponse
-    --framework
+    --data
       -local
         --dao
           -PostDao
@@ -77,7 +77,7 @@
               -Post // Modelo para consumo de servicio, aloja funciones de extensión para convertir
               -RedditVideo // Modelo para consumo de servicio
               -TopResponse // Modelo para consumo de servicio
-          --framework
+          --data
             -local
               --dao
                 -PostDao // Interfase que maneja la tabla Post

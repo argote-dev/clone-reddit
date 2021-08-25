@@ -1,4 +1,4 @@
-package com.davidargote.clone_reddit.framework.remote
+package com.davidargote.clone_reddit.data.remote
 
 import com.davidargote.clone_reddit.domain.remote.TopResponse
 import retrofit2.http.GET

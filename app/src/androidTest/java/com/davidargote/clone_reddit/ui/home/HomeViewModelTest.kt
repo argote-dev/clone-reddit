@@ -6,8 +6,8 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.davidargote.clone_reddit.core.Constants
 import com.davidargote.clone_reddit.repository.post_repository.PostsRepository
-import com.davidargote.clone_reddit.framework.local.ApplicationDatabase
-import com.davidargote.clone_reddit.framework.remote.Service
+import com.davidargote.clone_reddit.data.local.ApplicationDatabase
+import com.davidargote.clone_reddit.data.remote.Service
 import com.google.gson.GsonBuilder
 import junit.framework.TestCase
 import org.junit.After

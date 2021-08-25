@@ -4,8 +4,8 @@ import com.davidargote.clone_reddit.core.InternetChek
 import com.davidargote.clone_reddit.domain.local.PostEntity
 import com.davidargote.clone_reddit.domain.remote.toPostEntity
 import com.davidargote.clone_reddit.domain.remote.toPostEntityVideo
-import com.davidargote.clone_reddit.framework.local.dao.PostDao
-import com.davidargote.clone_reddit.framework.remote.Service
+import com.davidargote.clone_reddit.data.local.dao.PostDao
+import com.davidargote.clone_reddit.data.remote.Service
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -19,6 +19,7 @@ class PostsRepository @Inject constructor(
 
     override suspend fun getPost(): Flow<ArrayList<PostEntity>> = flow {
         if (InternetChek.isNetworkAvailable()) {
+            local.deleteAllPost()
             val response = service.getPost()
             response.data.children.forEach { child ->
                 val post = child.data

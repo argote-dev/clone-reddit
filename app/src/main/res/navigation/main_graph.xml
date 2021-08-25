@@ -20,6 +20,7 @@
             app:popUpTo="@id/postDetailFragment"
             app:popUpToInclusive="true" />
     </fragment>
+
     <fragment
         android:id="@+id/postDetailFragment"
         android:name="com.davidargote.clone_reddit.ui.post_detail.PostDetailFragment"
@@ -29,5 +30,6 @@
             android:name="post"
             app:argType="com.davidargote.clone_reddit.domain.local.PostEntity" />
     </fragment>
+
 
 </navigation>

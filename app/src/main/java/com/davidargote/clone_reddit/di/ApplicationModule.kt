@@ -2,8 +2,8 @@ package com.davidargote.clone_reddit.di
 
 import android.content.Context
 import com.davidargote.clone_reddit.core.Constants
-import com.davidargote.clone_reddit.framework.local.ApplicationDatabase
-import com.davidargote.clone_reddit.framework.remote.Service
+import com.davidargote.clone_reddit.data.local.ApplicationDatabase
+import com.davidargote.clone_reddit.data.remote.Service
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides

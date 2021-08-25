@@ -47,8 +47,6 @@ class PostAdapter constructor(
 
     override fun getItemCount(): Int = posts.size
 
-
-
     private inner class PostsViewHolder(val binding: ItemPostBinding, val context: Context) :
         BaseViewHolder<PostEntity>(binding.root) {
 
@@ -58,21 +56,21 @@ class PostAdapter constructor(
         @SuppressLint("SetTextI18n")
         override fun bind(item: PostEntity) {
 
-            if (!item.isVideo) {
+            if (item.isVideo) {
+                binding.itemImagePost.visibility = View.GONE
+                val params = binding.videoView.layoutParams
+                params.height = item.height
+                binding.videoView.layoutParams = params
+                prepareVideoPlayer(item.fallBackUrl)
+            } else {
                 binding.videoView.visibility = View.GONE
                 Glide.with(context)
                     .load(item.url)
                     .fitCenter()
                     .dontAnimate()
                     .format(DecodeFormat.PREFER_RGB_565)
-                    .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+                    .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
                     .into(binding.itemImagePost)
-            } else {
-                binding.itemImagePost.visibility = View.GONE
-                val params = binding.videoView.layoutParams
-                params.height = item.height
-                binding.videoView.layoutParams = params
-                prepareVideoPlayer(item.fallBackUrl)
             }
 
             binding.itemTvRating.text = item.ups.toString()
